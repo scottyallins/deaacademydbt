@@ -9,25 +9,16 @@ models:
           - unique
           - not_null
           - accepted_values:
-              arguments: 
-                values: ['1', '2', '3', '4', '5']
+              arguments:
+                values: ['1','2','3','4','5']
                 config:
                   severity: warn
       - name: emp_salary
         data_tests:
-          - salary_check
-  - name: customer
-    description: "DBT Model for the customer table"
+          - salary_check      
 sources:
   - name: employee
-    database: PC_DBT_DB
+    database: DBT_DB
     schema: PUBLIC
     tables:
       - name: EMPLOYEE_RAW
-  - name: customer
-    database: PC_DBT_DB
-    schema: PUBLIC
-    tables:
-      - name: CUSTOMER_SRC
-
-
