@@ -18,7 +18,7 @@ models:
           - salary_check   
   - name: customer
     description: "DBT model for the customer table"   
-  - name: customer_view "DBT model for the customer view"
+  - name: customer_view 
     description: "DBT customer view"
   - name: sales
     description: "DBT model for the sales table"
